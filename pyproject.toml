@@ -1,0 +1,25 @@
+[project]
+name = "aganitha-ai-project-task"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Rohan Gaidhani",email = "er.rohangaidhani@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "lxml (>=6.0.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers.cli:main"
+
+[tool.poetry]
+name = "aganitha_ai_project_task"
+packages = [{ include = "get_papers" }]
